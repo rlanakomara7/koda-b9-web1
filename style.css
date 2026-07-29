@@ -1,19 +1,87 @@
-#judul {
-  text-align: center;
-}
-.subjudul1 {
-  background-color: #36baeb;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 2;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#img {
+  display: block;
+  width: 200px;
+  margin-bottom: 30px;
+  margin: 0 auto 30px;
+}
+
+#judul {
+  text-align: center;
+  color: #2d80de;
+  margin-bottom: 30px;
+}
+
+body > div {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+.subjudul1,
 .subjudul2 {
   background-color: #36baeb;
+  text-align: center;
+  margin-bottom: 10px;
 }
+
 .talent {
   background-color: #c7e5f0;
 }
 
 .film {
   background-color: #c7e5f0;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color: #1565c0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #71adf1;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: #1976d2;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 100px;
+}
+
+button:hover {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .days,
@@ -25,6 +93,15 @@
   display: inline-block;
   width: 50px;
   height: 50px;
+}
+
+.days:last-child,
+.w1:last-child,
+.w2:last-child,
+.w3:last-child,
+.w4:last-child,
+.w5:last-child {
+  color: red;
 }
 
 .judul {
@@ -42,21 +119,37 @@
   margin-bottom: 5vh;
 }
 
-.navbar {
+.navlist {
   display: flex;
   width: 100px;
   list-style: none;
-  padding: 0;
+  padding-right: s0;
   margin: 0;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
 }
+.navlist a {
+  color: #1565c0;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-.navlist {
+.navlist a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   position: sticky;
   top: 0;
   left: 0;
-  background-color: #36baeb;
+  background-color: rgba(54, 186, 235, 0.8);
+  border-radius: 12px;
+  padding: 20px 30px;
+  z-index: 100;
 }
 
 .linkedin {
