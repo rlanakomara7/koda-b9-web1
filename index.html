@@ -4,17 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koda 9 Web Rama</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #img {
+        width: 200px;
+      }
+      .button {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
   </head>
   <body>
-    <img src="./assets/Koda.webp" alt="Tidak berhasil dimuat" />
+    <img id="img" src="./assets/Koda.webp" alt="Tidak berhasil dimuat" />
     <!-- Atribut HTML -->
     <!-- src untuk source dari gambar yg ditampilkan-->
     <!-- alt untuk menampilkan pesan error jika gambar tidak berhasil ditampilkan -->
-    <h1 style="color: mediumblue" title="I am Header">Pola Tidur yang Sehat</h1>
+    <h1 id="judul" title="I am Header">Pola Tidur yang Sehat</h1>
     <!-- style digunakan untuk menambahkan style di element (color,font,size and more) -->
     <!-- title digunakan untuk menambah informasi saat cursor diatas element -->
     <div>
-      <h2 id="Subjudul 1">Berapa Lama Waktu Ideal Tidur?</h2>
+      <h2 class="subjudul1">Berapa Lama Waktu Ideal Tidur?</h2>
       <!-- id digunakan untuk memberi identitas unik pada tag di html -->
       <p>
         Dewasa (18 - 64 tahun): idealnya tidur <b>7 -9 jam</b> per malam. tidur
@@ -28,7 +38,7 @@
     </div>
 
     <div>
-      <h2 id="Subjudul 2">Pentingnya Waktu Tidur yang Cukup</h2>
+      <h2 class="subjudul2">Pentingnya Waktu Tidur yang Cukup</h2>
       <p>
         Tidur yang baik <u>membantu mencegah berbagai penyakit kronis</u> ,
         seperti
@@ -45,24 +55,26 @@
       </p>
     </div>
 
-    <div>
-      <p>
-        <button style="color: darkgrey">
-          <a href="./pages/tableDataTalent.html" type="button"
-            >Link Data Talent Koda B 9</a
-          >
-        </button>
-      </p>
-    </div>
+    <div class="button">
+      <div class="talent">
+        <p>
+          <button>
+            <a href="./pages/tableDataTalent.html" type="button"
+              >Link Data Talent Koda B 9</a
+            >
+          </button>
+        </p>
+      </div>
 
-    <div>
-      <p>
-        <button style="color: darkgrey">
-          <a href="./pages/formSurveyFilm.html" type="button"
-            >Form Survey Penonton Film</a
-          >
-        </button>
-      </p>
+      <div class="film">
+        <p>
+          <button>
+            <a href="./pages/formSurveyFilm.html" type="button"
+              >Form Survey Penonton Film</a
+            >
+          </button>
+        </p>
+      </div>
     </div>
   </body>
 </html>
