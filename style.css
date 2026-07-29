@@ -36,3 +36,32 @@
 .calender {
   border-style: solid;
 }
+
+.bodysticky {
+  height: 200vh;
+  margin-bottom: 5vh;
+}
+
+.navbar {
+  display: flex;
+  width: 100px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  align-items: center;
+}
+
+.navlist {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #36baeb;
+}
+
+.linkedin {
+  width: 100px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
