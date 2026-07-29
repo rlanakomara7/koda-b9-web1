@@ -1,21 +1,17 @@
-body {
-  background-image: url(https://www.deviantart.com/evusha/art/paper-texture-376881810);
-}
 #judul {
   text-align: center;
 }
 .subjudul1 {
-  background-color: cornflowerblue;
+  background-color: #36baeb;
 }
 
 .subjudul2 {
-  background-color: cornflowerblue;
+  background-color: #36baeb;
 }
-
 .talent {
-  margin-left: 40;
+  background-color: #c7e5f0;
 }
 
 .film {
-  margin-right: 40;
+  background-color: #c7e5f0;
 }
