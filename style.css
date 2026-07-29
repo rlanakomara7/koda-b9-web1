@@ -15,3 +15,24 @@
 .film {
   background-color: #c7e5f0;
 }
+
+.days,
+.w1,
+.w2,
+.w3,
+.w4,
+.w5 {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.judul {
+  margin-bottom: 20px;
+  border-style: solid;
+  background-color: #36baeb;
+}
+
+.calender {
+  border-style: solid;
+}
