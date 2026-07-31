@@ -9,7 +9,7 @@ body {
   background-color: #f5f7fa;
   color: #333;
   line-height: 2;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -120,18 +120,24 @@ button:hover {
 }
 
 .navlist {
-  display: flex;
-  width: 100px;
+  /* display: flex; */
+  /* width: 100px; */
   list-style: none;
-  padding-right: s0;
-  margin: 0;
-  gap: 30px;
+  padding-right: 10px;
+  margin-left: 20px;
+  gap: 20px;
   align-items: center;
 }
-.navlist a {
-  color: #1565c0;
+
+.navlista {
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 20px;
+  display: inline-block;
 }
 
 .navlist a:hover {
@@ -148,7 +154,7 @@ button:hover {
   left: 0;
   background-color: rgba(54, 186, 235, 0.8);
   border-radius: 12px;
-  padding: 20px 30px;
+  padding: 20px 120px;
   z-index: 100;
 }
 
@@ -157,4 +163,18 @@ button:hover {
   position: fixed;
   right: 20px;
   bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navlista {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navlista {
+    display: flex;
+    flex-direction: column;
+  }
 }
