@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Contoh flex */
+/* body {
+  height: 100vh;
+  padding: 20px;
+  > section {
+    border: 2px solid black;
+    background-color: aqua;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    div {
+      border: 2px solid black;
+      height: 50px;
+      width: 50px;
+      background-color: darkblue;
+      &:nth-child(1) {
+        flex-grow: 1;
+      }
+      &:nth-child(2) {
+        flex-grow: 2;
+        flex-shrink: 0;
+        flex-basis: 70;
+      }
+      &:nth-child(3) {
+        flex-grow: 1;
+      }
+      &:nth-child(4) {
+        flex-grow: 1;
+      }
+      &:nth-child(5) {
+        flex-grow: 1;
+      }
+    }
+  }
+} */
+
+/* flex grow membagi layar berdasarkan pertumbuhan dan perbandingan nilainya , berapapun nilainya yg penting perbandingannya */
+/* flex shrink membagi layar berdasarkan pengurangannya dan jika nilai nya 0 maka tidak terjadi pengecilan area  */
+/* flex basis mempertahankan layar saat dibesar kecilkan berdasarkan nilai yg diberikan */
+
+.logo {
+  text-align: center;
+  font-size: 20px;
+}
+
+.nav {
+  /* display: flex; */
+  background-color: DodgerBlue;
+  /* justify-content: center; */
+}
+
+.nav li {
+  background-color: #f1f1f1;
+  margin: 10px 10px;
+  padding: 20px;
+  font-size: 24px;
+  border-style: none;
+  list-style: none;
+  border-radius: 10px;
+  display: block; /* menurun */
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) {
+  .nav li {
+    display: inline-block;
+  }
+}
+
+/* Desktop (>=1024px) */
+@media (min-width: 1024px) {
+  .nav li {
+    display: block;
+  }
+}
+
+/* flexbox 3x3 */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.rowdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  &:nth-child(2) {
+    flex-grow: 2;
+  }
+}
